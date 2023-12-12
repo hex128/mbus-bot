@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "io.hex128"
-version = "4.3-SNAPSHOT"
+version = "4.4-SNAPSHOT"
 
 repositories {
     mavenCentral()
