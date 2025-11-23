@@ -14,7 +14,7 @@ object ZxingApi {
             val client = OkHttpClient()
             val body = MultipartBody.Builder().setType(MultipartBody.FORM)
                 .addFormDataPart("file", "file", stream.readAllBytes().toRequestBody()).build()
-            val request = Request.Builder().url("https://zxing.rmrf.co/read?format=DataMatrix").post(body)
+            val request = Request.Builder().url("https://zxing.hex128.io/read?format=DataMatrix").post(body)
                 .addHeader("accept", "application/json").build()
             val response = client.newCall(request).execute()
             if (response.code != 200) {
